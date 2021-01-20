@@ -1,0 +1,273 @@
+/*Skeleton*/
+
+html, body { 
+    margin: 0; 
+    background-image: url(img/background.jpg);
+    background-repeat: repeat;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding-right: 5px;
+    padding-left: 5px;
+    font-family: "bocek-bold";
+    font-size: 1.0em;   
+  }  
+
+
+
+
+
+
+/*Border*/
+
+* {
+    box-sizing: border-box;  
+    /* border: 1px solid red; */
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+      
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+
+
+
+
+
+/* Navbar */
+
+div.navbar-inside a{
+    text-decoration: none;
+    font-family: "bocek-bold";
+    color: white;
+    display: inline;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    background-color: rgba(65, 65, 65, 0.267);
+    opacity: 1;
+    transition: 0.3s
+}
+
+div.navbar-inside {
+    padding: 5px;
+    list-style-type: none;
+    font-family: "bocek-bold";
+    font-size: 1.4em;
+}
+
+div.navbar-inside a:hover {
+    background-color: #ff00003f;
+    color: #000000;
+}
+
+
+
+
+
+
+/*Logo*/
+
+div.logo{
+    text-align: center;
+    padding: 20px;
+}
+
+
+
+
+
+
+/* Content */
+
+.content{
+    text-align: center;
+    color: white;
+    font-family: "bocek-bold";
+    font-size: 1.6em;
+    padding: 3%;
+    min-height: 100%;
+    margin-bottom: -100px;
+    padding-bottom: 100px;
+}
+
+.vizmis {
+  font-family: "bocek-bold";
+  font-size: 1.6em;
+  padding: 10%;
+  min-height: 100%;
+  margin-bottom: -100px;
+  padding-bottom: 300px;
+  color: #ffffff;
+}
+
+.tweet-part{
+  padding: 3%;
+}
+
+.googleform{
+  text-align: center;
+}
+
+
+
+
+
+
+/* Social Icons */
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+  width: 70px;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+  }
+  
+  .fa-twitter {
+  background: #55ACEE;
+  color: white;
+  }
+  
+  .fa-youtube {
+    background: #bb0000;
+    color: white;
+  }
+  
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+  
+  .fa-spotify {
+    background: #2cc64d;
+    color: white;
+  }
+  
+  .fa-podcast{
+    background: white;
+    color: #a479e2;
+  }
+  
+
+
+
+  .container-fluid {
+    position: relative;
+    min-height: 97vh;
+    padding-bottom: 8.5rem;
+  }
+
+
+
+  
+  /* Footer */
+  
+  .social-icons{
+    font-size: 30px;
+    text-align: center;
+    width:100%;
+    height: 50px;
+    font-family: "bocek-bold";
+    text-align: center;
+    position: absolute;
+    font-family: "bocek-bold";
+    width:100%;
+    right: 0;
+    bottom: 0;
+    margin-bottom: -1%;
+    padding: 1.5%;
+    height: 8.5rem;
+  }
+  
+
+
+ 
+
+
+
+/*Media Queries*/
+
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+  }
+  
+  @media only screen and (min-width:120px) and (max-width:767px) {
+    .navbar-inside a {
+        display: block !important;
+        border-bottom: 1px solid #ffffff;
+    }
+    .vizmis{
+      text-align: center;
+      padding-bottom: 100px !important;
+    }
+}
+
+  @media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+  }
+
+  @media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+  }
+
+
+
+
+
+
+/*Font*/
+
+@font-face{
+    font-family: "bocek-bold";
+    src: url(font/Champagne_Limousines_Bold.ttf);
+}
+
+
+/* 
+Ceyhun Gülbaş
+https://www.linkedin.com/in/ceyhun-gulbas/
+__________
+29.11.2020 
+*/
